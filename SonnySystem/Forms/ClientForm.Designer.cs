@@ -95,6 +95,7 @@ namespace SonnySystem.Forms
             this.dgvClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClients.Size = new System.Drawing.Size(300, 500);
             this.dgvClients.TabIndex = 0;
+            this.dgvClients.AllowUserToAddRows = false;
             // 
             // panelDetails
             // 
@@ -288,6 +289,7 @@ namespace SonnySystem.Forms
             this.ClientSize = new System.Drawing.Size(900, 500);
             this.Controls.Add(this.splitContainer1);
             this.Name = "ClientForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciar Clientes";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

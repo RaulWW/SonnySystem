@@ -25,6 +25,7 @@
             this.btnClients = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnAdjustment = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -93,7 +94,7 @@
             this.labelTitle.TabIndex = 4;
             this.labelTitle.Text = "SONNY SYSTEM";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

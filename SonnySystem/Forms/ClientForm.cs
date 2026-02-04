@@ -38,7 +38,7 @@ namespace SonnySystem.Forms
             _clients = new BindingList<Client>(data);
             dgvClients.DataSource = _clients;
             
-            if (dgvClients.Rows.Count > 0)
+            if (dgvClients.Rows.Count > 0 && dgvClients.Rows[0].DataBoundItem != null)
                 dgvClients.Rows[0].Selected = true;
         }
 
@@ -46,13 +46,18 @@ namespace SonnySystem.Forms
         {
             if (dgvClients.SelectedRows.Count > 0)
             {
-                _currentClient = (Client)dgvClients.SelectedRows[0].DataBoundItem;
-                PopulateFields(_currentClient);
+                var item = dgvClients.SelectedRows[0].DataBoundItem as Client;
+                if (item != null)
+                {
+                    _currentClient = item;
+                    PopulateFields(_currentClient);
+                }
             }
         }
 
         private void PopulateFields(Client client)
         {
+            if (client == null) return;
             txtNome.Text = client.Nome;
             txtCEP.Text = client.CEP;
             txtEndereco.Text = client.Endereco;

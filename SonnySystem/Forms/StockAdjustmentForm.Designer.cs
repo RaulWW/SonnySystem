@@ -146,7 +146,7 @@ namespace SonnySystem.Forms
             this.Controls.Add(this.cmbType);
             this.Controls.Add(this.label1);
             this.Name = "StockAdjustmentForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajuste Manual de Estoque";
             this.ResumeLayout(false);
             this.PerformLayout();

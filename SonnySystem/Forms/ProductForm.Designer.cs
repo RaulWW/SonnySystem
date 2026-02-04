@@ -33,6 +33,7 @@ namespace SonnySystem.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(800, 400);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.AllowUserToAddRows = false;
             // 
             // panel1
             // 
@@ -61,6 +62,7 @@ namespace SonnySystem.Forms
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "ProductForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciar Produtos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
