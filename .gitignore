@@ -1,0 +1,14 @@
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.history/
+.gemini/
+sonnysystem.db*
+*.txt
+*.xlsx
+*.jpeg
+*.docx
+*.db
